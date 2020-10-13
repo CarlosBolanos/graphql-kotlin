@@ -8,9 +8,5 @@ import org.springframework.web.bind.annotation.RequestBody
 
 @Component
 class UsersMutations(var userService: UserService): Mutation {
-
-    fun createUser(@RequestBody user: UserModel): UserModel {
-        var updatedUser = userService.saveOrUpdate(user)
-        return updatedUser
-    }
+    fun createUser(@RequestBody user: UserModel): UserModel = userService.saveOrUpdate(user)
 }

@@ -13,5 +13,4 @@ class UserService (var userRepository: UserRepository) {
         var updatedUser = userRepository.save(user.toEntity())
         return updatedUser.toViewModel()
     }
-
 }

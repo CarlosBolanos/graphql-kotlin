@@ -7,8 +7,7 @@ import org.springframework.context.annotation.Bean
 
 
 @SpringBootApplication
-class ApiApplication {
-
+class ApiApplication  {
 	@Bean
 	fun tracing() :TracingInstrumentation = TracingInstrumentation()
 }
